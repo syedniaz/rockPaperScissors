@@ -4,31 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock, Paper and Scissors</title>
+
+
     <link rel="stylesheet" href="style.css">
-    <script src="javascript.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.css"  rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.js" defer></script>
+    <script src="javascript.js" defer></script>
 </head>
-<body>
+<body class="bg-gray-700 text-white text-center">
     
-    <h1>Welcome to Rock, Paper and Scissors</h1>
-    <h2>First to 5 Wins</h2>
+    <h1 class="text-5xl py-10">Welcome to Rock, Paper and Scissors</h1>
+    <h2 class="text-3xl py-2">First to 5 Wins</h2>
 
-    <div class="container">
-        <button id="rock">Rock</button>
-        <button id="paper">Paper</button>
-        <button id="scissors">Scissors</button>
+    <div class="container flex justify-around items-center mx-auto md:py-10 py-5 ps-3">
+        <button id="rock" type="button" class="text-white bg-blue-700 hover:bg-blue-400 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-xl px-5 py-2.5 me-2 mb-2 focus:outline-none"><img src="img/rocks.png" alt="rock" class="h-28 max-w-full">Rock</button>
+        <button id="paper" type="button" class="text-white bg-blue-700 hover:bg-blue-400 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-xl px-5 py-2.5 me-2 mb-2 focus:outline-none"><img src="img/paper.png" alt="paper" class="h-28 max-w-full">Paper</button>
+        <button id="scissors" type="button" class="text-white bg-blue-700 hover:bg-blue-400 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-xl px-5 py-2.5 me-2 mb-2 focus:outline-none"><img src="img/scissors.png" alt="scissors" class="h-28 max-w-full">Scissors</button>
     </div>
     
-    <div class="container">
-        <h3 id="playerScore">Player: 0</h3>
-        <h3 id="compScore">Computer: 0</h3>
+    <div class="container flex justify-around items-center mx-auto md:py-10 py-5">
+        <span><img src="img/game-controller.png" alt="controller" class="h-24 max-w-full"><h3 id="playerScore" class="text-2xl">Player: 0</h3></span>
+        <span><img src="img/monitor.png" alt="monitor" class="h-24 max-w-full"><h3 id="compScore" class="text-2xl">Computer: 0</h3></span>
     </div>
 
-    <div class="container">
-        <h3 id="playerChoice"></h3>
-        <h3 id="compChoice"></h3>
+    <div class="container flex justify-around items-center mx-auto md:py-10 py-5">
+        <h3 id="playerChoice" class="text-2xl"></h3>
+        <h3 id="compChoice" class="text-2xl"></h3>
     </div>
 
-    <h4 id="result"></h4>
+    <h4 id="result" class="text-3xl py-5"></h4>
+
+    
+
+    <footer class="fixed bottom-0 left-0 z-20 w-full p-4 bg-gray-800 border-t border-gray-600 shadow flex flex-col items-center justify-center md:p-6">
+        <div class="block text-base text-white text-center">Copyright &copy; 2023 <a href="https://github.com/syedniaz" class="hover:text-blue-400"><img src="img/github_536452.png" alt="github" class="inline h-5 max-w-full px-1 ms-1">syedniaz</a>
+        </div>
+        <div class="flex justify-between gap-6 text-base text-white text-center"> 
+            <div>Font from <a href="https://fonts.google.com/specimen/Vina+Sans"  class="hover:text-blue-400">Google Fonts</a></div>
+            <div>Icons from <a href="https://www.flaticon.com/"  class="hover:text-blue-400">Flaticon</a></div>
+        </div>
+    </footer>
+
 
 </body>
 </html>

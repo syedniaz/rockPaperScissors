@@ -5,7 +5,7 @@ const rockBtn = document.querySelector('#rock')
 const paperBtn = document.querySelector('#paper')
 const scissorsBtn = document.querySelector('#scissors')
 
-const result = document.querySelector('#result')
+let result = document.querySelector('#result')
 const playerChoice = document.querySelector('#playerChoice')
 const compChoice = document.querySelector('#compChoice')
 
@@ -77,6 +77,7 @@ function resetScore() {
 
     playerChoice.textContent = emp
     compChoice.textContent = emp
+    result.textContent = emp
 }
 
 
@@ -97,11 +98,10 @@ function updateScore (){
 function game (playerSelection) {
     let str = "" 
     str = playRound(playerSelection, getComputerChoice())
+    if (playerScore == 5 || compScore == 5) str = ''
     updateScore()
-    if (playerScore == 5 || compScore == 5) str = ""
     return str
 }
-
 
 rockBtn.addEventListener('click', () => {
     playerSelection = "Rock"

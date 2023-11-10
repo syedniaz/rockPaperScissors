@@ -1,11 +1,5 @@
-body {
-    text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Vina+Sans&display=swap');
 
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+body{
+    font-family: 'Vina Sans', sans-serif;
 }
