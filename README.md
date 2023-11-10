@@ -3,5 +3,8 @@ Web app where one can play the Rock, Paper and Scissors. Built using HTML, CSS a
 
 Link: https://syedniaz.github.io/rockPaperScissors
 
-## Screenshots
+## Screenshot
 ![Screenshot (001)](/img/ss.png)
+
+## Mobile Screenshot
+![Screenshot (002)](/img/ss1.png)
